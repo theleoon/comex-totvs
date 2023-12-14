@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Projeto para fins didáticos - Leonardo Silva">
+    <title>Alura LevelUp - TOTVS</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            COMEX - Level Up
+        </h1>
+        <p>Treinando um pouco de HTML com JavaScript IHUUU!</p>
+        <hr>
+    </header>
+
+    <section id="secFormulario">
+        <h3>Exemplo, estrutura básica de um formulário</h3>
+
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+
+        <label for="sobreNome">Sobrenome:</label><br>
+        <input type="text" id="sobreNome" name="sobreNome"><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="datetime" id="idade" name="idade"><br>
+
+        <button onclick="pegaDadosDoFormulario();">Enviar</button>
+
+    </section>
+
+    <section id="secTabelaPeloJs">
+        <h3>Tabela de clientes</h3>
+        
+        <button onclick="mostrarTabela();">Construir tabela</button>
+        
+        <div id="divTabelaDeClientes">
+        </div>
+    </section>
+
+    <section id="secTrocaDeCorPorJs">
+        <h3>Exemplo, botão que troca a cor do texto através do JavaScript</h3>
+        <div>
+            <p id="para">Texto, sobre a aula de hoje</p>
+            <button onclick="changeColor('blue');">Azul</button>
+            <button onclick="changeColor('red');">Vermelho</button>
+            <button onclick="changeColor('green');">Verde</button>
+        </div>
+    </section>
+
+</body>
+
+<script src="index.js"></script>
+<script src="cliente.js"></script>
+<script src="tabela-clientes.js"></script>
+<script src="troca-cor.js"></script>
+
+</html>
